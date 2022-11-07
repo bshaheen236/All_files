@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Float layout</title>
+    <style>
+        @media screen and (max-width:1020px) {
+    #neo{
+        color: yellow;
+    }
+    #soft{
+        color: blue;
+    }
+}
+
+@media screen and (max-width:810px) {
+#header{
+    color: red;
+}
+#main{
+    width: 200px;
+}
+#content{
+    width:65%;
+}
+#sider{
+    width: 34%;
+}
+}
+@media screen and (max-width:510px) {
+#header{ 
+    color: green;
+    text-align: center;
+}
+#main{
+    width: auto;
+}
+#menu ul li a{
+    padding: 5px 5px;
+}
+#section{ 
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    width: 100%;
+}
+#sider{
+    width: 100%;
+}
+}
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        
+        <div id="header" >
+            <h1><span id="neo" >Neo</span><span id="soft">SOFT</span> Technologies</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="section">
+        <div id="content">
+            <h2>About Company</h2>
+            <br>
+            <p style="text-indent: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae est natus reprehenderit obcaecati debitis minus eum, numquam magni excepturi veniam! Unde facilis, vel corrupti cupiditate nostrum maiores laboriosam maxime cum tempora. Id eaque commodi rem facilis reiciendis nesciunt culpa corporis et? Repellat unde ipsa nulla molestiae dolor sint quos!</p>
+            <br>
+            <p style="text-indent: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae est natus reprehenderit obcaecati debitis minus eum, numquam magni excepturi veniam! Unde facilis, vel corrupti cupiditate nostrum maiores laboriosam maxime cum tempora. Id eaque commodi rem facilis reiciendis nesciunt culpa corporis et? Repellat unde ipsa nulla molestiae dolor sint quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eveniet reiciendis ducimus in officia dolor cupiditate ullam magni eligendi sed. Ea quas vitae accusantium, est numquam autem similique aliquid quae at voluptatem recusandae deserunt et dolorum quaerat dolore cumque aspernatur!</p>
+        </div>
+        <div id="sider">
+            Neosoft Technologies Pvt Ltd Address Details: <br> <br>
+            Mumbai (Head Office) <br>
+            NeoSOFT Technologies <br>
+            4th Floor, The Ruby, <br>
+            29, Senapati Bapat Marg, <br>
+            Dadar (West) <br> <br>
+            Mumbai- 400-028 <br>
+            INDIA <br> <br>
+            Tele : +91 22 40500600 Fax : +91 22 40500695 <br> <br>
+            Email : india@neosofttech.com <br>
+        </div>
+    </div>
+        <div id="footer">
+            <i>Copyright &copy; 2022. All right reserved</i>
+        </div>
+    </div>
+</body>
+</html>
